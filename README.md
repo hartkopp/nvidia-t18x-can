@@ -5,11 +5,15 @@ This repository contains two new CAN drivers shipped with Linux For Tegra R27.1.
 
 https://developer.nvidia.com/embedded/linux-tegra
 
-downloaded (2017-03-18) from
+r27.1 - downloaded (2017-03-18) from
 
 https://developer.nvidia.com/embedded/dlc/l4t-sources-27-1
 
 http://developer.download.nvidia.com/embedded/L4T/r27_Release_v1.0/BSP/r27.1.0_sources.tbz2
+
+r28.1 - downloaded (2017-10-31) from
+
+https://developer.nvidia.com/embedded/dlc/l4t-sources-28-1
 
 The two Kconfig files tell about the new drivers:
 
@@ -22,6 +26,18 @@ The two Kconfig files tell about the new drivers:
           Support for the Bosch M_TTCAN driver. The Bosch MTTCAN CAN
           controller is having two independent CAN interfaces. These
           intefaces supports CAN-FD and TT-CAN. This driver will require
+          SocketCAN support enabled in kernel.
+
+    config MTTCAN_IVC
+        tristate "Bosch M_TTCAN IVC Devices"
+        depends on ARCH_TEGRA_18x_SOC && CAN
+        select STAGING
+        help
+          Support for the Bosch M_TTCAN driver over IVC. The driver
+          is implemented in sensor processor running RTOS. CAN services
+          are made available to Linux though IVC. The Bosch MTTCAN
+          CAN controller has two independent CAN interfaces. These
+          intefaces supports CAN-FD and TT-CAN. This driver requires
           SocketCAN support enabled in kernel.
 
     config TEGRA_HV_SECCAN

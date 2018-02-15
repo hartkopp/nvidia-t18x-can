@@ -15,6 +15,13 @@ r28.1 - downloaded (2017-10-31) from
 
 https://developer.nvidia.com/embedded/dlc/l4t-sources-28-1
 
+r28.2 - downloaded (2018-02-15) from
+
+https://developer.nvidia.com/embedded/dlc/l4t-sources-28-2
+
+has identical CAN drivers as in release r28.1
+
+
 The two Kconfig files tell about the new drivers:
 
 

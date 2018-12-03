@@ -21,8 +21,15 @@ https://developer.nvidia.com/embedded/dlc/l4t-sources-28-2
 
 has identical CAN drivers as in release r28.1
 
+r31.1.0 - downloaded (2018-12-03) from
 
-The two Kconfig files tell about the new drivers:
+https://developer.nvidia.com/embedded/dlc/l4t-sources-31-1-0
+
+In 31.1.0 the mttcan and nvsec drivers have been integrated into one tree in
+kernel/nvidia/... inside kernel_src.tbz2 inside public_sources.tbz2 .
+The base kernel in kernel/kernel-4.9/Makefile points to version 4.9.108 .
+
+The two Kconfig files tell about the new drivers (from r28.1):
 
 
     config MTTCAN
@@ -55,4 +62,4 @@ The two Kconfig files tell about the new drivers:
           To compile this driver as a module, choose M here: the
           module will be called nvhvseccan.
 
-This excerpt from the huge Linux 4.4 source tarball provided by NVIDIA is intended to study and preserve the new drivers. Especially to check the differences between the CAN FD capable M_CAN mainline driver and the provided 'Time Triggered M_CAN flavour' driver.
+This excerpt from the huge Linux 4.4 (Linux 4.9 in r31.1.0) source tarball provided by NVIDIA is intended to study and preserve the new drivers. Especially to check the differences between the CAN FD capable M_CAN mainline driver and the provided 'Time Triggered M_CAN flavour' driver.

@@ -29,6 +29,14 @@ In 31.1.0 the mttcan and nvsec drivers have been integrated into one tree in
 kernel/nvidia/... inside kernel_src.tbz2 inside public_sources.tbz2 .
 The base kernel in kernel/kernel-4.9/Makefile points to version 4.9.108 .
 
+r32.1 - downloaded (2019-05-12) from
+
+https://developer.nvidia.com/embedded/dlc/l4t-sources-32-1-JAX-TX2
+
+In 32.1 the mttcan and nvsec drivers have been integrated into one tree in
+kernel/nvidia/... inside kernel_src.tbz2 inside public_sources.tbz2 .
+The base kernel in kernel/kernel-4.9/Makefile points to version 4.9.140 .
+
 The two Kconfig files tell about the new drivers (from r28.1):
 
 

@@ -71,3 +71,11 @@ The two Kconfig files tell about the new drivers (from r28.1):
           module will be called nvhvseccan.
 
 This excerpt from the huge Linux 4.4 (Linux 4.9 in r31.1.0) source tarball provided by NVIDIA is intended to study and preserve the new drivers. Especially to check the differences between the CAN FD capable M_CAN mainline driver and the provided 'Time Triggered M_CAN flavour' driver.
+
+r32.2 - downloaded (2019-08-29) from
+
+https://developer.nvidia.com/embedded/dlc/public_sources_AGX
+
+r32.2.1 - downloaded (2019-08-29) from
+
+https://developer.nvidia.com/embedded/dlc/r32-2-1_Release_v1.0/TX2-AGX/sources/public_sources.tbz2

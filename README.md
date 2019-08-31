@@ -5,37 +5,7 @@ This repository contains two new CAN drivers shipped with Linux For Tegra R27.1.
 
 https://developer.nvidia.com/embedded/linux-tegra
 
-r27.1 - downloaded (2017-03-18) from
-
-https://developer.nvidia.com/embedded/dlc/l4t-sources-27-1
-
-http://developer.download.nvidia.com/embedded/L4T/r27_Release_v1.0/BSP/r27.1.0_sources.tbz2
-
-r28.1 - downloaded (2017-10-31) from
-
-https://developer.nvidia.com/embedded/dlc/l4t-sources-28-1
-
-r28.2 - downloaded (2018-02-15) from
-
-https://developer.nvidia.com/embedded/dlc/l4t-sources-28-2
-
-has identical CAN drivers as in release r28.1
-
-r31.1.0 - downloaded (2018-12-03) from
-
-https://developer.nvidia.com/embedded/dlc/l4t-sources-31-1-0
-
-In 31.1.0 the mttcan and nvsec drivers have been integrated into one tree in
-kernel/nvidia/... inside kernel_src.tbz2 inside public_sources.tbz2 .
-The base kernel in kernel/kernel-4.9/Makefile points to version 4.9.108 .
-
-r32.1 - downloaded (2019-05-12) from
-
-https://developer.nvidia.com/embedded/dlc/l4t-sources-32-1-JAX-TX2
-
-In 32.1 the mttcan and nvsec drivers have been integrated into one tree in
-kernel/nvidia/... inside kernel_src.tbz2 inside public_sources.tbz2 .
-The base kernel in kernel/kernel-4.9/Makefile points to version 4.9.140 .
+This excerpt from the huge Linux 4.4 (Linux 4.9 in r31.1.0) source tarball provided by NVIDIA is intended to study and preserve the new drivers. Especially to check the differences between the CAN FD capable M_CAN mainline driver and the provided 'Time Triggered M_CAN flavour' driver.
 
 The two Kconfig files tell about the new drivers (from r28.1):
 
@@ -70,7 +40,39 @@ The two Kconfig files tell about the new drivers (from r28.1):
           To compile this driver as a module, choose M here: the
           module will be called nvhvseccan.
 
-This excerpt from the huge Linux 4.4 (Linux 4.9 in r31.1.0) source tarball provided by NVIDIA is intended to study and preserve the new drivers. Especially to check the differences between the CAN FD capable M_CAN mainline driver and the provided 'Time Triggered M_CAN flavour' driver.
+Revision history:
+
+r27.1 - downloaded (2017-03-18) from
+
+https://developer.nvidia.com/embedded/dlc/l4t-sources-27-1
+
+http://developer.download.nvidia.com/embedded/L4T/r27_Release_v1.0/BSP/r27.1.0_sources.tbz2
+
+r28.1 - downloaded (2017-10-31) from
+
+https://developer.nvidia.com/embedded/dlc/l4t-sources-28-1
+
+r28.2 - downloaded (2018-02-15) from
+
+https://developer.nvidia.com/embedded/dlc/l4t-sources-28-2
+
+has identical CAN drivers as in release r28.1
+
+r31.1.0 - downloaded (2018-12-03) from
+
+https://developer.nvidia.com/embedded/dlc/l4t-sources-31-1-0
+
+In 31.1.0 the mttcan and nvsec drivers have been integrated into one tree in
+kernel/nvidia/... inside kernel_src.tbz2 inside public_sources.tbz2 .
+The base kernel in kernel/kernel-4.9/Makefile points to version 4.9.108 .
+
+r32.1 - downloaded (2019-05-12) from
+
+https://developer.nvidia.com/embedded/dlc/l4t-sources-32-1-JAX-TX2
+
+In 32.1 the mttcan and nvsec drivers have been integrated into one tree in
+kernel/nvidia/... inside kernel_src.tbz2 inside public_sources.tbz2 .
+The base kernel in kernel/kernel-4.9/Makefile points to version 4.9.140 .
 
 r32.2 - downloaded (2019-08-29) from
 

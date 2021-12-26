@@ -81,3 +81,7 @@ https://developer.nvidia.com/embedded/dlc/public_sources_AGX
 r32.2.1 - downloaded (2019-08-29) from
 
 https://developer.nvidia.com/embedded/dlc/r32-2-1_Release_v1.0/TX2-AGX/sources/public_sources.tbz2
+
+r32.6.1 - downloaded (2021-12-26) from
+
+https://developer.nvidia.com/embedded/l4t/r32_release_v6.1/sources/t186/public_sources.tbz2
